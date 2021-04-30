@@ -73,3 +73,4 @@ In options 1 and 2 you can enter a new goal only when the previous goal has been
 
 It might be useful to try to improve the precision so as to reduce the threshold of goal achievement.
 
+ 
