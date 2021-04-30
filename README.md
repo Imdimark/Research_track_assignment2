@@ -10,7 +10,7 @@
 # final_assignment
 
 
-##Graphic rapresentation of the components:
+#Graphic rapresentation of the components:
 ![rosgraph](https://user-images.githubusercontent.com/78663960/116706592-14aa6300-a9ce-11eb-839c-acc932621672.png)
 
 
