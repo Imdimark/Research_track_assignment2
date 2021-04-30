@@ -33,29 +33,28 @@ total.launch
 
 ## Services
 
-/wall_follower_switch implements the boolean switch for the option number 3 (follow the wall)
+* /wall_follower_switch implements the boolean switch for the option number 3 (follow the wall)
 
 
-/user_interface implements the selection of the state and if state == 2 then also the manual choice of the next goal
+* /user_interface implements the selection of the state and if state == 2 then also the manual choice of the next goal
 
-/randompos implements the automatic choice of the next position
+* /randompos implements the automatic choice of the next position
 
 
 ## Parameters
 
-des_x
-des_y
-stato
+* des_x
+* des_y
+* stato
 The first two are basically for the x and y poisition of the goal and stato is used to define the current state of the machine
 
-# publisher: 
-move_base_msgs/MoveBaseActionGoal is used to send the goal to reach via the  move_base/goal topic
- geometry_msgs/twist is used to send linear and angular velocity via the topic "cmd/vel"
+## publisher: 
+* move_base_msgs/MoveBaseActionGoal is used to send the goal to reach via the  move_base/goal topic
+* geometry_msgs/twist is used to send linear and angular velocity via the topic "cmd/vel"
 
-# subscriber
+## subscriber
 nav_msgs/Odometry it is used by sub_odom in order to receive the position through the topic /Odom
 		
-
 
 # robot behavior
 The robot will have to locate itself in space via the move_base package and plan the path through the gmapping package. The user can select for keyboard options, depending on the choice made the behavior of the robot varies. The possible choices are:
