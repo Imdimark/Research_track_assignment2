@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+	
+	
+    <arg name="des_x" default= "5"/>
+    <arg name="des_y" default= "-7"/>
+	<arg name="stato" default= "4"/>
+    <param name="des_pos_x" value="$(arg des_x)" />
+    <param name="des_pos_y" value="$(arg des_y)" />
+	<param name="stato" value="$(arg stato)" />
+    <node pkg="final_assignment" type="wall_follow_service_m.py" name="wall_follow" output="screen"/>
+	<node pkg="final_assignment" type="randompos.py" name="randompos" />
+    <node pkg="final_assignment" type="user_interface.py" name="user_interface" output="screen" />
+    <node pkg="final_assignment" type="bug_m.py" name="bug_m" output="screen"/>
+</launch>
