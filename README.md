@@ -64,9 +64,9 @@ nav_msgs/Odometry it is used by sub_odom in order to receive the position throug
 # robot behavior
 The robot will have to locate itself in space via the move_base package and plan the path through the gmapping package. The user can select for keyboard options, depending on the choice made the behavior of the robot varies. The possible choices are:
 
-1) Go to a random position: 6 possible combinations have been initialized in the randompos.py node, randomly one of the 6 options is chosen that will become the goal to be tagged.
-2)Go to a location given by the user: in the user_interface.py node 6 locations have been initialized, the user can choose from keyboard a number from 1 to 6 that corresponds to the option.
-3)Follow the wall
+1. Go to a random position: 6 possible combinations have been initialized in the randompos.py node, randomly one of the 6 options is chosen that will become the goal to be tagged.
+2. Go to a location given by the user: in the user_interface.py node 6 locations have been initialized, the user can choose from keyboard a number from 1 to 6 that corresponds to the option.
+3. Follow the wall
 In options 1 and 2 you can enter a new goal only when the previous goal has been reached, option 3 instead can be blocked by typing 8, the robot will enter state 4 and return to the last position.
 
 # System’s limitations and possible improvements
