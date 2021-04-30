@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 # final_assignment
 
 
@@ -17,7 +10,10 @@
 
 # How to run:
 
-To launch it,  first download the repository from github, via git clone command https://github.com/Imdimark/Second_Assignmenty
+To launch it,  first download the repository from github, via
+```
+git clone command https://github.com/Imdimark/Second_Assignmenty
+```
  Then launch in this order the 2 launch files:
 move_base.launch(it opens also simulation_gmapping.launch)
 total.launch
