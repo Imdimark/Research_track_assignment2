@@ -15,7 +15,6 @@ Rap
 
 
 
-
 How to run:
 
 To launch it,  first download the repository from github, via git clone command https://github.com/Imdimark/Second_Assignmenty
@@ -62,8 +61,7 @@ move_base_msgs/MoveBaseActionGoal is used to send the goal to reach via the  mov
  geometry_msgs/twist is used to send linear and angular velocity via the topic "cmd/vel"
 
 subscriber
-
-
+nav_msgs/Odometry it is used by sub_odom in order to receive the position through the topic /Odom
 		
 
 
@@ -78,3 +76,4 @@ In options 1 and 2 you can enter a new goal only when the previous goal has been
 System’s limitations and possible improvements
 
 It might be useful to try to improve the precision so as to reduce the threshold of goal achievement.
+
