@@ -10,28 +10,28 @@
 
 # How to run:
 
-To launch it,  first download the repository from github, via
+To launch it first download the repository from github:
 ```
 git clone command https://github.com/Imdimark/Second_Assignmenty
 ```
  Then launch in this order the 2 launch files:
+```
 move_base.launch(it opens also simulation_gmapping.launch)
 total.launch
-
+```
 
 # content of the package
 
-# Nodes
-bug_m.py:it is the main node, it uses the other nodes for the various services
+## Nodes
+* bug_m.py:it is the main node, it uses the other nodes for the various services
 
-randompos.py: It provides a service for setting a random position which the robot will achieve
+* randompos.py: It provides a service for setting a random position which the robot will achieve
 
-user_interface.py  it implements the service used to choose the parameter stato and if stato == 2 it also acquires the user goal
+* user_interface.py  it implements the service used to choose the parameter stato and if stato == 2 it also acquires the user goal
 
+* wall_follow_service_m.py: m implements the algoritm that allows to follow the external wall.
 
-wall_follow_service_m.py: m implements the algoritm that allows to follow the external wall.
-
-# Services
+## Services
 
 /wall_follower_switch implements the boolean switch for the option number 3 (follow the wall)
 
@@ -41,7 +41,7 @@ wall_follow_service_m.py: m implements the algoritm that allows to follow the ex
 /randompos implements the automatic choice of the next position
 
 
-# Parameters
+## Parameters
 
 des_x
 des_y
