@@ -46,6 +46,7 @@ total.launch
 * des_x
 * des_y
 * stato
+
 The first two are basically for the x and y poisition of the goal and stato is used to define the current state of the machine
 
 ## publisher: 
